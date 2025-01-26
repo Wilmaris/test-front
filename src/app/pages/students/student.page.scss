@@ -1,0 +1,29 @@
+/* users.page.scss */
+
+:host {
+    display: block;
+    padding: 10px;
+  }
+  
+  ion-content {
+    --background: #f8f9fa;
+  }
+  
+  ion-item {
+    --background: #fff;
+    --border-color: #dee2e6;
+    --color-hover: #e9ecef;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #495057;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #6c757d;
+    margin: 8px 0;
+  }
+ 
+  

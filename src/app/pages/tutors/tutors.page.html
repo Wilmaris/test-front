@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar class="toolbar-centered">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" class="custom-back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tutors</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="specialityFilter" (ionInput)="filterBySpeciality()"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let tutor of filteredTutors">
+      <ion-icon name="person" slot="start"></ion-icon> 
+      {{ tutor.first_name }} {{ tutor.last_name }} - speciality: {{ tutor.speciality }}
+    </ion-item>
+  </ion-list>
+</ion-content>

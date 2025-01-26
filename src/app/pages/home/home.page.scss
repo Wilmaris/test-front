@@ -1,0 +1,23 @@
+ion-footer {
+    ion-toolbar {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      height: auto; /* Adjust height automatically */
+    }
+  
+    ion-img {
+      max-width: 100%; /* Make sure the image does not exceed the width of the container */
+      max-height: 300px; /* Adjust this height according to your needs */
+      object-fit: cover; /* Ensure that the image fits tightly inside the container */
+    }
+  }
+  
+  /* Media query to hide footer on large screens */
+  @media (min-width: 768px) {
+    .footer-image {
+      display: none;
+    }
+  }
+
+  

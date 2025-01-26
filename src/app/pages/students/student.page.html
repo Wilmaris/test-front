@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="toolbar-centered">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" class="custom-back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ng-container *ngFor="let user of users">
+      <ion-item (click)="selectUser(user)">
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>{{ user.first_name }} {{ user.last_name }}</ion-label>
+      </ion-item>
+      <!--Selected user details-->
+      <ion-item *ngIf="selectedUser && selectedUser.id === user.id" detail="false">
+        <div>
+          <h2>{{ selectedUser.first_name }} {{ selectedUser.last_name }}</h2>
+          <p>Date_of_birth: {{ selectedUser.date_of_birth }}</p>
+          <p>Address: {{ selectedUser.address }}</p>
+        </div>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+</ion-content>
+
+
+
+
+
+

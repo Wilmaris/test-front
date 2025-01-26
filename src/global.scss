@@ -1,0 +1,126 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* global.scss */
+
+ion-list {
+    margin: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 16px;
+    font-size: 18px;
+    color: #343a40;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  ion-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  ion-header {
+    --background: none; /* Required to override the default background */
+    background: linear-gradient(to right, rgba(4, 0, 255, 0.514), rgba(255, 100, 247, 0.911)); /* Gradient applied to the entire header*/
+    color: #fff;
+    text-align: center;
+  }
+  
+  ion-toolbar {
+    --background: transparent; /* Make sure the background of the toolbar is transparent so that the header gradient is visible */
+  }
+  
+  ion-title {
+    --background: transparent; /* Make sure the background of the title is transparent so that the gradient of the header is visible */
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 16px;
+    color: #495057;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #6c757d;
+    margin: 8px 0;
+  }
+  ion-icon {
+    font-size: 24px; 
+    color: #895af7;
+  }
+  
+  ion-item {
+    --background: #fff;
+    --border-color: #dee2e6;
+    --color-hover: #e9ecef;
+  }
+
+  .toolbar-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    position: relative;
+  }
+  
+  .toolbar-centered ion-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%; /* Position the title vertically in the center*/
+    transform: translate(-50%, -50%); /* Center the title both horizontally and vertically */
+  }
+
+  .custom-back-button  {
+    --background: transparent; /* Transparent background*/
+    --color: #fff; /* White color for the arrow */
+    --padding-start: 0; /* Remove padding on the left */
+    --padding-end: 0; /* Remove padding on the right */
+    --margin-start: 0; /* Remove margin on left */
+    --icon-font-size: 24px; /* Icon size */
+  }
+  
+  
+  
